@@ -18,6 +18,6 @@
 
   - name: print the information again and again
     vars:
-      trainer: "siva sir"
+      TRAINER: "siva sir"
     ansible.builtin.debug:
       msg: "Hi, I am learning {{COURSE}}, Duration is: {{DURATION}}, Trainer: {{TRAINER}}"
