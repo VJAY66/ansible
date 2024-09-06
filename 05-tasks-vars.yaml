@@ -1,5 +1,6 @@
 - name: variables to print
   hosts: local
+  connection: local
   vars: 
     COURSE: "DevOps with AWS"
     DURATION: "120HRS"
