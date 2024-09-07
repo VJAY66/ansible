@@ -7,7 +7,7 @@
   tasks:
   - name: print if less than 10
     ansible.builtin.debug:
-      msg: "given number is {{ input }} is lesss than 10"
+      msg: "given number is {{ input }} is lesss than 10"j
     when:  input | int < 10
   - name: print if greater than or equal to 10
     ansible.builtin.debug:
