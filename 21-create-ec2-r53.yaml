@@ -5,15 +5,15 @@
     subnet_id: "subnet-0892833b1fdbc81cb" 
     sg_id: "sg-06a506a47179173a7"
     ami_id: "ami-09c813fb71547fc4f"
-  instances:
-  - mysql
-  - backend
-  - frontend
+    instances:
+    - mysql
+    - backend
+    - frontend
  # zone: vjay.online
   tasks:
   - name: create ec2 instance
     amazon.aws.ec2_instance:
-      name:  "{{ item }}" 
+      name: "{{ item }}" 
       vpc_subnet_id: "{{ subnet_id }}"
       instance_type: "t3.micro"
       image_id: "{{ ami_id }}" 
