@@ -9,11 +9,11 @@
   - mysql
   - backend
   - frontend
-  zone: vjay.online
+ # zone: vjay.online
   tasks:
   - name: create ec2 instance
     amazon.aws.ec2_instance:
-      name:  "item" 
+      name:  "{{ item }}" 
       vpc_subnet_id: "{{ subnet_id }}"
       instance_type: "t3.micro"
       image_id: "{{ ami_id }}" 
